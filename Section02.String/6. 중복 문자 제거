@@ -1,0 +1,22 @@
+import java.util.*;
+import java.io.*;
+  
+public class Main {
+  public static void main(String[] args) throws IOException {
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    String sentence = br.readLine();
+    
+    // HashSet
+    // 중복 자동으로 허용하지 않음, 빠른 속도
+    Set<Character> set = new HashSet<>();
+    
+    for(char c : sentence.toCharArray()) {
+      if(!set.contains(c)) {
+        set.add(c);
+        System.out.print(c);
+      }
+    }
+    
+    return ;
+  }
+}
