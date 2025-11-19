@@ -3,7 +3,7 @@ import java.io.*;
   
 public class Main {
   public static void main(String[] args) throws IOException {
-	  // string 입력 받은 후, .replaceAll("[^a-zA-Z]", "")로 변경, 그 후 투 포인터로 확인.
+	// string 입력 받은 후, .replaceAll("[^a-zA-Z]", "")로 변경, 그 후 투 포인터로 확인.
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String basic = br.readLine();
     String fixed = basic.replaceAll("[^a-zA-Z]", "").toLowerCase();
